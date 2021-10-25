@@ -12,6 +12,8 @@ def get_arguments():
     parser.add_option("-f", "--file_list", dest="file_list", help="File with a list of URLs")
     parser.add_option("-u", "--url", dest="url", help="Enter a single URL")
     (options, arguments) = parser.parse_args()
+    if not options.file_list and not options.url:
+    	print("[" + Fore.RED + "-" + Fore.RESET + "]" + f" You must enter either a URL(-u) or a file or URLS(-f), type -h for more info")
     return options
 
 
