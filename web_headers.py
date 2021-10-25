@@ -13,7 +13,7 @@ def get_arguments():
     parser.add_option("-u", "--url", dest="url", help="Enter a single URL")
     (options, arguments) = parser.parse_args()
     if not options.file_list and not options.url:
-    	print("[" + Fore.RED + "-" + Fore.RESET + "]" + f" You must enter either a URL(-u) or a file or URLS(-f), type -h for more info")
+    	print("[" + Fore.RED + "-" + Fore.RESET + "]" + f" You must enter either a URL(-u) or a file of URLS(-f), type -h for more info")
     return options
 
 
