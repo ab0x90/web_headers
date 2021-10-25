@@ -6,6 +6,7 @@ This program can take a list of URLs from a file(one per line) or a single URL a
 
 Usage:
 ```sh
+git clone https://github.com/ab0x90/web_headers.git
 pip3 install -r requirements.txt
 python3 web_headers.py -h
 ```
